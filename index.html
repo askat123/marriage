@@ -6,15 +6,20 @@
     <title>Приглашение на нашу свадьбу</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="header">
+        <img src="https://flomaster.top/uploads/posts/2022-06/thumbs/1654092925_14-flomaster-club-p-kirgizskie-uzori-risunki-krasivo-14.jpg" class="oimo" alt="">
+        
+        <img src="https://flomaster.top/uploads/posts/2022-06/thumbs/1654092925_14-flomaster-club-p-kirgizskie-uzori-risunki-krasivo-14.jpg" class="oimo2" alt="">
+    </div>
     <section id="hero" data-aos="zoom-out-up">
-        <img src="https://kalix.club/uploads/posts/2022-12/thumbs/1671465990_kalix-club-p-svadba-oboi-vkontakte-63.jpg" style="width: 90%;">
+        <img src="./img/photo_2023-09-02_17-04-15.jpg" style="width: 95%;position: relative;" data-aos="zoom-in-up">
         <h2><i>Aibek & Aisalkyn <br><ion-icon name="heart-outline"></ion-icon></i></h2>
     </section>
-    <header data-aos="zoom-out-up">
+    <header data-aos="fade-down">
         <i><h1 class="title">Приглашаем вас на нашу свадьбу!</h1>
         <p class="date-location">Дата: 15 сентября 2023 года</p>
         <p class="date-location">Место: <span class="location">Ресторан "Романтика"</span></p>
@@ -34,7 +39,7 @@
         <p>Мы рады пригласить вас на наше счастливое событие. Свадьба будет полна радости, улыбок и тепла.</p>
     </section>
 
-    <section class="rsvp" data-aos="zoom-out-up">
+    <section class="rsvp" data-aos="zoom-in-up">
         <h2>Подтвердите свое присутствие</h2>
         <label for="name">Ваше имя:</label>
         <input type="text" id="name" name="name" required>
@@ -51,13 +56,13 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img src="https://images.pexels.com/photos/3650469/pexels-photo-3650469.jpeg?cs=srgb&dl=pexels-studio-negarin-3650469.jpg&fm=jpg" />
+                    <img src="./img/one.jpg" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="https://images.pexels.com/photos/3738670/pexels-photo-3738670.jpeg?cs=srgb&dl=pexels-jonathan-borba-3738670.jpg&fm=jpg" />
+                    <img src="./img/two.jpg" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                    <img src="./img/three.jpg" />
                   </div>
                   <div class="swiper-slide">
                     <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
@@ -84,19 +89,13 @@
 
         </div>
     </section>
-    <footer data-aos="zoom-out-up">
+    <footer>
         <p class="confirmation-message">Спасибо, что подтвердили свое присутствие. Мы с нетерпением ждем встречи!</p>
     </footer></i>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="../../assets/vendor/aos/dist/aos.js"></script>
-    <script>
-        $(document).on('ready', function () {
-          // initialization of aos
-          AOS.init({
-            duration: 650,
-            once: true
-          });
-        });
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    <script>
+  AOS.init();
+</script>
       </script>
     <script>
     var swiper = new Swiper(".mySwiper", {

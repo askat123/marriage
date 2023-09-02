@@ -4,7 +4,43 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.oimo{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    width: 15%;
+    margin: 15px 0 0 0;
+    z-index: 99;
+    opacity: 0.5;
+    transform: translateX(-50%);
+    animation: rotate 5s linear infinite;
+}.oimo2{
+    position: absolute;
+    top: 1%;
+    left: 15%;
+    width: 15%;
+    margin: 15px 0 0 0;
+    z-index: 99;
+    opacity: 0.5;
+    transform: translateX(-50%);
+    animation: rotate 5s linear infinite;
+}
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 40px 0;
+    background: white;
+    z-index: 98;
+}
+@keyframes rotate {
+    0% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
 /* Основные стили для страницы */
 body {
     font-family: Arial, Helvetica, ;
@@ -13,12 +49,13 @@ body {
     text-align: center;
     line-height: 1.6;
     padding: 20px;
-    background-image: url("https://wallpaperaccess.com/full/4055134.jpg");
+    background-image: url("");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(5px);
      /* Этот стиль создает эффект размытого фона */
 fill-opacity: 0.9;
+background-size: contain;
 }
 
 header {
@@ -83,7 +120,7 @@ form {
 #hero img{
     border-radius: 10px 10px 80px 80px;
     width: 90%;
-    height: 500px;
+    height: 600px;
     object-fit: cover;
     position: relative;
 }
